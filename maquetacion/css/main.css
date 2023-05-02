@@ -1,21 +1,206 @@
+@import url(./_reset.css);
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
 body {
-    margin: 0;
+  background-image: url(../images/twp-home.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
 }
-p {
-    margin-right: 40px;
+
+div#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1 rem;
+  border-bottom: 0.1px solid #1c1c1c;
+  padding: 1rem 0.5rem 1rem 15rem;
+  background-color: white
 }
-h1 {
-    margin: 0px 400px;
-    text-align: center;
+
+div#logo {
+  flex: 1 0 auto;
 }
-button.redondo {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 25px;
-    padding: 0px 20px;
-    height: 32px;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem
 }
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-left: 10rem;
+  font-weight: 500;
+  font-size: small
+}
+
+.redondo {
+  padding: 2px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  width: 7rem;
+  text-align: center;
+  transition: all 0.1s ease-in-out;
+  font-size: 0.8rem;
+  font-weight: 600
+}
+
+.redondo:hover {
+  background-color: black;
+  color: white
+}
+
+
+
+
+div.icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-right: 20rem
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+
+/*_____INTRODUCTION____*/
+
+div#introduction {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  padding-bottom: 5rem;
+  padding-top: 10rem;
+  background-color: white
+}
+
+div#introduction-text>h1 {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 1.7rem;
+  width: 30vw;
+  word-spacing: 2px;
+  line-height: normal
+}
+
 div#introduction-actions {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-block: 3rem
+}
+
+div#introduction-actions>button {
+  padding-block: 0.5rem;
+}
+
+
+div#introduction-actions button:first-child {
+  width: 10rem
+}
+
+button.sumate2 {
+  border: 2px solid rgb(107, 83, 240);
+  color: rgb(120, 103, 260);
+}
+
+button.sumate2:hover {
+  background-color: rgb(107, 83, 240);
+  color: white;
+
+}
+
+
+/*____counter_____*/
+
+div.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-block: 7rem;
+  background-color: rgb(32, 27, 36)
+}
+
+div.counter-text {
+  font-family: 'Inter', sans-serif;
+  ;
+  color: white;
+  width: 20rem
+}
+
+div.counter-text>h2 {
+  text-align: left;
+  font-size: 30px
+}
+
+div.counter-text>p {
+  font-size: 14px
+}
+
+
+div.counter-numbers {
+  display: flex;
+  gap: 3rem;
+  border: 1px solid
+}
+
+.number {
+  position: relative;
+  font-size: 50px;
+  font-weight: 600;
+  display: flex;
+  flex-flow: column nowrap;
+  color: white
+}
+
+.number>span {
+  font-size: 14px;
+  text-align: center;
+  color: rgb(140, 147, 156)
+}
+
+div.plus-sign {
+  display: flex;
+  align-items: center
+}
+
+span.plus {
+  color: rgb(107, 83, 240);
+  font-size: 30px
+}
+
+
+
+/*______footer________*/
+
+div.containers-gap {
+  height: 100rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+div.footer {
+  font-size: 10rem;
+  background-color: white
 }
